@@ -1,6 +1,6 @@
 {
   "name": "@kevinsperrine/react-native-simple-compass",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Simple module exposing the compass on iOS and Android",
   "scripts": {
     "analyze": "npx tsc --noEmit",
