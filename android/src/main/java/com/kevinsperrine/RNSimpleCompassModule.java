@@ -83,7 +83,7 @@ public class RNSimpleCompassModule
       mAzimuth = newAzimuth;
       WritableMap map = Arguments.createMap();
 
-      map.putDouble("heading", mAzimuth);
+      map.putDouble("degree", mAzimuth);
       map.putDouble("accuracy", event.accuracy);
 
       getReactApplicationContext()

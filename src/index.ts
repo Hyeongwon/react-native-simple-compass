@@ -4,9 +4,9 @@ const { RNSimpleCompass } = NativeModules;
 let listener: EmitterSubscription | null = null;
 
 export const SimpleCompass = {
-  start(threshold: number = 0, callback: (course: { degree: number; accuracy: number }) => void) {
+  start(threshold: number = 0, callback: (heading: { degree: number; accuracy: number }) => void) {
     if (listener) {
-      RNSimpleCompass.stop();
+      this.stop();
     }
 
     const compassEventEmitter = new NativeEventEmitter(RNSimpleCompass);
@@ -14,7 +14,7 @@ export const SimpleCompass = {
       const correctedCourse = { ...course };
       const { height, width } = Dimensions.get('window');
       if (width > height) {
-        correctedCourse.heading += 90;
+        correctedCourse.degree += 90;
       }
       callback(correctedCourse);
     });

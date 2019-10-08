@@ -41,7 +41,7 @@
   }
 
   [self sendEventWithName:kHeadingUpdated
-                     body:(@{@"heading" : @(newHeading.trueHeading), @"accuracy" : @(newHeading.headingAccuracy)})];
+                     body:(@{@"degree" : @(newHeading.trueHeading), @"accuracy" : @(newHeading.headingAccuracy)})];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
