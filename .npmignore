@@ -35,7 +35,8 @@ android/gradlew.bat
 android/gradle/
 android/com_crashlytics_export_strings.xml
 android/local.properties
-android/.gradle/
+android/.gradle
+android/.idea
 android/.signing/
 android/.idea/gradle.xml
 android/.idea/libraries/

@@ -1,6 +1,6 @@
 {
   "name": "@kevinsperrine/react-native-simple-compass",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Simple module exposing the compass on iOS and Android",
   "scripts": {
     "analyze": "npx tsc --noEmit",
@@ -17,6 +17,7 @@
   "module": "lib/module/index.js",
   "files": ["/android", "!/android/build", "/ios", "src/", "lib/", "/*.podspec"],
   "keywords": ["react-native"],
+  "homepage": "https://github.com/kevinsperrine/react-native-simple-compass",
   "repository": {
     "type": "git",
     "url": "https://github.com/kevinsperrine/react-native-simple-compass.git"
