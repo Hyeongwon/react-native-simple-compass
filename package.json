@@ -1,6 +1,6 @@
 {
   "name": "@kevinsperrine/react-native-simple-compass",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Simple module exposing the compass on iOS and Android",
   "scripts": {
     "analyze": "npx tsc --noEmit",
@@ -8,7 +8,6 @@
     "lint": "npx eslint ./ --ignore-pattern example --ignore-pattern node_modules --fix --quiet",
     "shipit": "np",
     "test": "echo no tests defined",
-    "precommit": "lint-staged && yarn analyze",
     "build": "bob build",
     "prepare": "yarn build"
   },
